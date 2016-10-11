@@ -41,5 +41,17 @@ namespace Bangazon.Orders
 
       return output;
     }
-  }
+
+      public bool removeProduct(string product)
+      {
+        //Will only remove the exact string, not something that contains that string as a substring
+          return _products.Remove(product);
+      }
+
+      public void removeProduct()
+      {
+        //Will only remove the exact string, not something that contains that string as a substring
+         _products.Clear();
+      }
+    }
 }
